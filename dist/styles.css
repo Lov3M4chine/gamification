@@ -978,6 +978,21 @@ html {
 .mb-80 {
   margin-bottom: 20rem;
 }
+<<<<<<< HEAD
+=======
+.mb-auto {
+  margin-bottom: auto;
+}
+.mb-72 {
+  margin-bottom: 18rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-16 {
+  margin-bottom: 4rem;
+}
+>>>>>>> 09644ad (Add story summary skeleton)
 .inline-block {
   display: inline-block;
 }
@@ -987,6 +1002,24 @@ html {
 .hidden {
   display: none;
 }
+<<<<<<< HEAD
+=======
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
+}
+.aspect-\[4\/5\] {
+  aspect-ratio: 4/5;
+}
+.h-9 {
+  height: 2.25rem;
+}
+.h-7 {
+  height: 1.75rem;
+}
+>>>>>>> 09644ad (Add story summary skeleton)
 .h-5 {
   height: 1.25rem;
 }
@@ -1064,6 +1097,39 @@ html {
 .stroke-current {
   stroke: currentColor;
 }
+<<<<<<< HEAD
+=======
+.p-3 {
+  padding: 0.75rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pl-0 {
+  padding-left: 0px;
+}
+.pb-60 {
+  padding-bottom: 15rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+>>>>>>> 09644ad (Add story summary skeleton)
 .pb-14 {
   padding-bottom: 3.5rem;
 }
