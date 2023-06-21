@@ -391,19 +391,22 @@ html {
 }
 
 :root {
-  color-scheme: light;
-  --pf: 259 94% 44%;
-  --sf: 314 100% 40%;
-  --af: 174 75% 39%;
-  --nf: 214 20% 14%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
+  --p: 203 52% 52%;
+  --pf: 203 52% 45%;
+  --sf: 343 80% 28%;
+  --af: 50 98% 57%;
+  --nf: 229 18% 5%;
+  --b2: 213 14% 21%;
+  --b3: 213 14% 14%;
+  --bc: 215 6% 84%;
+  --pc: 206 28% 12%;
+  --sc: 358 52% 88%;
+  --ac: 48 38% 14%;
+  --nc: 232 3% 80%;
+  --inc: 130 18% 85%;
+  --suc: 172 31% 11%;
+  --wac: 40 52% 10%;
+  --erc: 358 52% 88%;
   --rounded-box: 1rem;
   --rounded-btn: 0.5rem;
   --rounded-badge: 1.9rem;
@@ -414,135 +417,14 @@ html {
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --p: 259 94% 51%;
-  --pc: 259 96% 91%;
-  --s: 314 100% 47%;
-  --sc: 314 100% 91%;
-  --a: 174 75% 46%;
-  --ac: 174 75% 11%;
-  --n: 214 20% 21%;
-  --nc: 212 19% 87%;
-  --b1: 0 0% 100%;
-  --b2: 0 0% 95%;
-  --b3: 180 2% 90%;
-  --bc: 215 28% 17%;
-}
-
-@media (prefers-color-scheme: dark) {
-
-  :root {
-    color-scheme: dark;
-    --pf: 262 80% 43%;
-    --sf: 316 70% 43%;
-    --af: 175 70% 34%;
-    --in: 198 93% 60%;
-    --su: 158 64% 52%;
-    --wa: 43 96% 56%;
-    --er: 0 91% 71%;
-    --inc: 198 100% 12%;
-    --suc: 158 100% 10%;
-    --wac: 43 100% 11%;
-    --erc: 0 100% 14%;
-    --rounded-box: 1rem;
-    --rounded-btn: 0.5rem;
-    --rounded-badge: 1.9rem;
-    --animation-btn: 0.25s;
-    --animation-input: .2s;
-    --btn-text-case: uppercase;
-    --btn-focus-scale: 0.95;
-    --border-btn: 1px;
-    --tab-border: 1px;
-    --tab-radius: 0.5rem;
-    --p: 262 80% 50%;
-    --pc: 0 0% 100%;
-    --s: 316 70% 50%;
-    --sc: 0 0% 100%;
-    --a: 175 70% 41%;
-    --ac: 0 0% 100%;
-    --n: 213 18% 20%;
-    --nf: 212 17% 17%;
-    --nc: 220 13% 69%;
-    --b1: 212 18% 14%;
-    --b2: 213 18% 12%;
-    --b3: 213 18% 10%;
-    --bc: 220 13% 69%;
-  }
-}
-
-[data-theme=light] {
-  color-scheme: light;
-  --pf: 259 94% 44%;
-  --sf: 314 100% 40%;
-  --af: 174 75% 39%;
-  --nf: 214 20% 14%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
-  --rounded-box: 1rem;
-  --rounded-btn: 0.5rem;
-  --rounded-badge: 1.9rem;
-  --animation-btn: 0.25s;
-  --animation-input: .2s;
-  --btn-text-case: uppercase;
-  --btn-focus-scale: 0.95;
-  --border-btn: 1px;
-  --tab-border: 1px;
-  --tab-radius: 0.5rem;
-  --p: 259 94% 51%;
-  --pc: 259 96% 91%;
-  --s: 314 100% 47%;
-  --sc: 314 100% 91%;
-  --a: 174 75% 46%;
-  --ac: 174 75% 11%;
-  --n: 214 20% 21%;
-  --nc: 212 19% 87%;
-  --b1: 0 0% 100%;
-  --b2: 0 0% 95%;
-  --b3: 180 2% 90%;
-  --bc: 215 28% 17%;
-}
-
-[data-theme=dark] {
-  color-scheme: dark;
-  --pf: 262 80% 43%;
-  --sf: 316 70% 43%;
-  --af: 175 70% 34%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
-  --rounded-box: 1rem;
-  --rounded-btn: 0.5rem;
-  --rounded-badge: 1.9rem;
-  --animation-btn: 0.25s;
-  --animation-input: .2s;
-  --btn-text-case: uppercase;
-  --btn-focus-scale: 0.95;
-  --border-btn: 1px;
-  --tab-border: 1px;
-  --tab-radius: 0.5rem;
-  --p: 262 80% 50%;
-  --pc: 0 0% 100%;
-  --s: 316 70% 50%;
-  --sc: 0 0% 100%;
-  --a: 175 70% 41%;
-  --ac: 0 0% 100%;
-  --n: 213 18% 20%;
-  --nf: 212 17% 17%;
-  --nc: 220 13% 69%;
-  --b1: 212 18% 14%;
-  --b2: 213 18% 12%;
-  --b3: 213 18% 10%;
-  --bc: 220 13% 69%;
+  --s: 343 80% 35%;
+  --a: 50 98% 64%;
+  --n: 229 18% 12%;
+  --b1: 213 14% 28%;
+  --in: 143 64% 24%;
+  --su: 175 75% 40%;
+  --wa: 43 88% 37%;
+  --er: 343 80% 35%;
 }
 
 *, ::before, ::after {
@@ -735,9 +617,5 @@ html {
     transform: scale(1);
     opacity: 1;
   }
-}
-.text-blue-700 {
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
