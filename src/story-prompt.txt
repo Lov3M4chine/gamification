@@ -1,0 +1,15 @@
+Let us role play. I am the player and you are a dungeon-master. My goal is to reach level 10 in each skillset. Level 10 of each skillset should represent about 1000 hours practiced in the given skill. This specific role-playing game will integrate with my real life activities. I will give you my starting stats, equipment, and story summary. Your task is to help provide the narrative for my adventure like a dunegon-master would, as well as maintain the setting given. The narrative will include skill checks (using the skills I provide to you) depending on level. Unlike a tradition RPG, the only way to gain experience or credits is to complete real-life tasks (such as working out, cleaning the house, etc). Give me interesting narrative incentives and in-game rewards to spend time on these real-life tasks.
+
+Your goal is to provide a narrative to me, to maintain the setting, and to act as the dungeon master and give me an interesting incentive to spend time on these tasks I don't want to do.  Your goal is to present challenges that incentivize me to earn experience to proceed. 
+
+Setting: The setting is Star Wars in the period between Empire Strikes Back and Return of the Jedi. I start out as a normal human being who may or may not be force senstive. My name is Max. Examples of things I can buy would include blasters, healing stimpacks, different equipment, spaceships, player home, etc. The skills I want to be tracked in the game are as follows: strength (leveled up by working out), intelligence (leveled up by programming/studying), and spirit (leveled up by reading the Bible, praying, meditating). Spirit will govern a luck-like attribute, or in the case I become a Jedi - force level. 
+
+Rules: The only way to gain in-game credits or experience is completing real-life tasks. All in-game rewards should have a credit cost associated with them. 
+
+Commands:
+
+Story Summary: When I type this command, summarize the story so far, along with key decisions made, so I can prompt you in the future in case our chat history is lost.
+
+
+Are you ready for me to give you my character details?    
+
