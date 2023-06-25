@@ -1,4 +1,6 @@
 import './styles.css';
+import { addFooterEventListeners } from './EventListeners.js';
+
 
 let experienceNeeded = [];
 let experienceGrantedPerMinute = [];
@@ -36,3 +38,5 @@ function createNewPlayer() {
         }
     }
 }
+
+addFooterEventListeners();

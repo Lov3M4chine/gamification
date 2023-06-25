@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   mode: 'development',
@@ -34,6 +36,18 @@ module.exports = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]',
+              outputPath: 'images/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -46,5 +60,13 @@ module.exports = {
     }),
     new TerserPlugin(),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/character-portraits',
+          to: 'images',
+        },
+      ],
+    }),
 ],
 };

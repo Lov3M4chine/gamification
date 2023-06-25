@@ -987,9 +987,6 @@ html {
 .hidden {
   display: none;
 }
-.aspect-\[2\/3\] {
-  aspect-ratio: 2/3;
-}
 .h-5 {
   height: 1.25rem;
 }
@@ -1006,14 +1003,14 @@ html {
 .h-screen {
   height: 100vh;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .w-5 {
   width: 1.25rem;
 }
 .w-full {
   width: 100%;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1033,6 +1030,9 @@ html {
 .flex-nowrap {
   flex-wrap: nowrap;
 }
+.items-center {
+  align-items: center;
+}
 .justify-end {
   justify-content: flex-end;
 }
@@ -1047,6 +1047,12 @@ html {
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .border {
   border-width: 1px;

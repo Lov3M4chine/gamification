@@ -29,11 +29,11 @@
 
 <!--__________________________________________________________________-->
     <!--Character Body-->
-    <div class="flex justify-center gap-2 flex-wrap h-full">
+    <div id="character-page" class="flex justify-center gap-2 flex-wrap h-full">
       <!--Character Portrait-->
       <div class="flex flex-col border pb-14 justify-between h-fit">
-        <div>Character Name</div>
-        <div class="aspect-[2/3] h-64">Portrait</div>
+        <div>Max Devar</div>
+        <img src="/dist/images/Max-1.jpg" class="h-64">
         <div class="w-full flex justify-end">+</div>
       </div>
       <!--Attributes and Inventory-->
@@ -117,20 +117,17 @@
 
     <!--__________________________________________________________________-->
     <!--Rewards Body-->
-    <div class="flex flex-col gap-2 h-full hidden">
+    <div id="rewards-page" class="flex flex-col items-center gap-2 h-full hidden">
       <!--Credits-->
       <div class="flex">
         <div>Credits: </div>
       </div>
       <!--Rewards-->
-      <div class="flex w-full justify-around flex-wrap gap-2">
+      <div class="flex w-full justify-center gap-4 flex-wrap gap-2">
         <!--Rewards 1-->
-        <div class="border pb-14">
-          <div class="flex justify-between">
-            <div>Reward 1</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
-          </div>
-          <div>Reward 1</div>
+        <div class="flex flex-col items-center border pb-14">
+          <div>+</div>
+          <button class="border rounded">Reward 1</button>
           <div>Reward 1</div>
           <div>Reward 1</div>
           <div>Reward 1</div>
@@ -175,7 +172,7 @@
     
       <!--__________________________________________________________________-->
     <!--Story Body-->
-    <div class="flex flex-col gap-2 h-full hidden">
+    <div id="story-page" class="flex flex-col gap-2 h-full hidden">
       <!--Story-->
       <div class="flex w-full gap-2">
         <!--Section 1-->
@@ -193,7 +190,7 @@
 
     <!--__________________________________________________________________-->
     <!--Prompts Body-->
-    <div class="flex flex-col gap-2 h-full hidden">
+    <div id="prompts-page" class="flex flex-col gap-2 h-full hidden">
       <!--Prompts-->
       <div class="flex w-full gap-2">
         <!--AI Story-->
@@ -223,10 +220,10 @@
 <!--__________________________________________________________________-->
     <!--Footer-->
     <div class="flex justify-between btm-nav btm-nav-sm">
-      <div>Character</div>
-      <div>Rewards</div>
-      <div>Story</div>
-      <div>Prompts</div>
+      <button id="character-footer">Character</button>
+      <button id="rewards-footer">Rewards</button>
+      <button id="story-footer">Story</button>
+      <button id="prompts-footer">Prompts</button>
     </div>
 
   </div>
