@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Star Wars Story</title>
+  <title class="title">A Star Wars Story</title>
   <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +18,7 @@
         </button>
       </div>
       <div class="flex-1 justify-center">
-        <a class="btn btn-ghost normal-case text-xl ">A Star Wars Story</a>
+        <a class="text-xl text-accent">A Star Wars Story</a>
       </div>
       <div class="flex-none">
         <button class="btn btn-square btn-ghost">
@@ -31,34 +31,47 @@
     <!--Character Body-->
     <div id="character-page" class="flex justify-center gap-2 flex-wrap h-full">
       <!--Character Portrait-->
-      <div class="flex flex-col border pb-14 justify-between h-fit">
-        <div>Max Devar</div>
+      <div class="flex flex-col border justify-between h-fit">
+        <div class="bg-primary text-primary-content text-center">Max Devar</div>
         <img src="/dist/images/Max-1.jpg" class="h-64">
-        <div class="w-full flex justify-end">+</div>
+        <div class="flex relative">
+          <div class="bg-primary text-primary-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2">Credits: 200</div>
+          <div class="absolute right-0 bottom-0">+</div>
+        </div>
       </div>
       <!--Attributes and Inventory-->
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-4">
         <!--Attributes-->
-        <div class="border pb-14">
+        <div class="">
             <div class="border">
-              <div class="w-full flex justify-between">
-                <div>Attributes:</div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
+              <div class="w-full flex relative justify-center bg-accent text-accent-content">
+                <div class="">Attributes</div>
+                <div class="absolute right-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
               </div>
-              <div class="flex">
+              <div class="flex items-center gap-2 pb-4">
                 <div>Attribute 1: </div>
-                <div>Experience Bar</div>
+                <div class="flex flex-col">
+                  <div class="flex justify-center text-xs">50/1000</div>
+                  <progress class="progress w-56 h-4 progress-primary" value="40" max="100"></progress>
+                </div>
+                <div>Level 1</div>
+              </div>
+              <div class="flex items-center gap-2 pb-4">
+                <div>Attribute 2: </div>
+                <div class="flex flex-col">
+                  <div class="flex justify-center text-xs">100/1000</div>
+                  <progress class="progress w-56 h-4 progress-primary" value="60" max="100"></progress>
+                </div>
+                <div>Level 1</div>
               </div>
             </div>
-
         </div>
-          <!--Inventory-->
+        <!--Inventory-->
         <div class="flex flex-col border">
-          <div>Credits: 200</div>
           <div class="flex flex-wrap justify-center gap-2">
             <div class="flex-grow border">
               <div class="w-full flex justify-between">
-                <div>Equipment: </div>
+                <div class="bg-accent text-accent-content">Equipment: </div>
                 <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
               </div>
               <div class="flex flex-nowrap">Head: Equipment 1</div>
