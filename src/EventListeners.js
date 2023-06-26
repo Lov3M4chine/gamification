@@ -1,3 +1,6 @@
+import { hideProgressBarOnOverlap } from "./ProgreeBarOverlapCheck";
+
+
 const characterPage = document.getElementById("character-page");
 const rewardsPage = document.getElementById("rewards-page");
 const storyPage = document.getElementById("story-page");
@@ -35,4 +38,10 @@ export function addFooterEventListeners () {
     storyFooter.addEventListener('click', (event) => {togglePageSelection(storyPage, event)});
     promptsFooter.addEventListener('click', (event) => {togglePageSelection(promptsPage, event)});
     console.log(`Footer event listeners added.`)
+}
+
+export function addProgressBarEventListeners() {
+    window.addEventListener('resize', () => {
+        hideProgressBarOnOverlap();
+    });
 }
