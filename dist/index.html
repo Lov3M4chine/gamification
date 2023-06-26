@@ -53,30 +53,59 @@
                   <img class="w-5 h-5" src="/src/icons/add.svg" alt="add-icon">
                 </button>       
               </div>
-              <div class="flex justify-between items-center gap-2 p-4 relative">
-                <button class="attribute flex justify-between items-center">Strength: </button>
-                <div class="flex flex-col">
-                  <button class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">50/1000</button>
-                  <progress class="progress-bar progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="40" max="100"></progress>
+
+              <div class="">
+                <div class="flex justify-between items-center gap-2 p-4 relative">
+                  <button class="attribute flex justify-between items-center">Strength: </button>
+                  <div class="flex flex-col">
+                    <button class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">50/1000</button>
+                    <progress class="progress-bar progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="40" max="100"></progress>
+                  </div>
+                  <button>Level 1</button>
                 </div>
-                <button>Level 1</button>
-              </div>
-              <div class="flex justify-between items-center gap-2 p-4 relative">
-                <div class="attribute flex justify-between items-center">Intelligence:</div>
-                <div class="flex flex-col">
-                  <div class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">100/1000</div>
-                  <progress class="progress-bar progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="60" max="100"></progress>
+                <div class="flex justify-between items-center gap-2 p-4 relative">
+                  <div class="attribute flex justify-between items-center">Intelligence:</div>
+                  <div class="flex flex-col">
+                    <div class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">100/1000</div>
+                    <progress class="progress-bar progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="60" max="100"></progress>
+                  </div>
+                  <div>Level 1</div>
                 </div>
-                <div>Level 1</div>
-              </div>
-              <div class="flex justify-between items-center gap-2 p-4 relative">
-                <div class="attribute flex justify-between items-center">Spirituality: </div>
-                <div class="flex flex-col">
-                  <div class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">100/1000</div>
-                  <progress class="progress-bar progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="80" max="100"></progress>
+                <div class="flex justify-between items-center gap-2 p-4 relative">
+                  <div class="attribute flex justify-between items-center">Spirituality: </div>
+                  <div class="flex flex-col">
+                    <div class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">100/1000</div>
+                    <progress class="progress-bar progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="80" max="100"></progress>
+                  </div>
+                  <div>Level 1</div>
                 </div>
-                <div>Level 1</div>
               </div>
+
+              <!-- Add Attribute -->
+              <div class="w-full p-2 hidden">
+                <input type="text" placeholder="Attribute Name" class="input w-full bg-base-200 placeholder-base-content m-1" />
+                <div class="m-4">
+                  <div class="w-full rounded-xl bg-accent text-accent-content p-2">Associated Activities</div>
+                  <div class="p-2 form-control">
+                    <label class="label cursor-pointer gap-4">
+                      <span class="label-text bg-primary text-primary-content p-1 rounded w-full text-lg">Working Out</span> 
+                      <input type="checkbox" checked="checked" class="checkbox" />
+                    </label>
+                    <label class="label cursor-pointer gap-4">
+                      <span class="label-text bg-primary text-primary-content p-1 rounded w-full text-lg">Reading</span> 
+                      <input type="checkbox" checked="checked" class="checkbox" />
+                    </label>
+                    <label class="label cursor-pointer gap-4">
+                      <span class="label-text bg-primary text-primary-content p-1 rounded w-full text-lg">Cooking</span> 
+                      <input type="checkbox" checked="checked" class="checkbox" />
+                    </label>
+                  </div>
+                  <div class="flex justify-center w-full">
+                    <button class="bg-success text-success-content rounded-lg p-1">Add Activity</button>
+                  </div>
+                </div>
+              </div>
+
             </div>
         </div>
         <!--Inventory-->
