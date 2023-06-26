@@ -36,8 +36,10 @@
         <div class="bg-accent text-accent-content text-center pl-2 pr-2">Max Devar</div>
         <img src="/dist/images/Max-1.jpg" class="h-64">
         <div class="flex relative justify-center">
-          <div class="bg-accent text-accent-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2">Credits: 200</div>
-          <img class="w-6 h-6 absolute right-1 bottom-1" src="/src/icons/add.svg" alt="add-icon">
+          <button class="bg-accent text-accent-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2">Credits: 200</button>
+          <button class="absolute right-1 bottom-1">
+            <img class="w-6 h-6" src="/src/icons/add.svg" alt="add-icon">
+          </button>
         </div>
       </div>
       <!--Attributes and Inventory-->
@@ -47,15 +49,17 @@
             <div class="">
               <div class="w-full flex relative justify-center bg-accent text-accent-content">
                 <div class="pl-2 pr-2">Attributes</div>
-                <img class="w-5 h-5 absolute right-1" src="/src/icons/add.svg" alt="add-icon">
+                <button class="absolute right-1">
+                  <img class="w-5 h-5" src="/src/icons/add.svg" alt="add-icon">
+                </button>       
               </div>
               <div class="flex justify-between items-center gap-2 p-4 relative">
-                <div class="attribute flex justify-between items-center">Strength: </div>
+                <button class="attribute flex justify-between items-center">Strength: </button>
                 <div class="flex flex-col">
-                  <div class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">50/1000</div>
+                  <button class="experience-numbers flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">50/1000</button>
                   <progress class="progress-bar progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="40" max="100"></progress>
                 </div>
-                <div>Level 1</div>
+                <button>Level 1</button>
               </div>
               <div class="flex justify-between items-center gap-2 p-4 relative">
                 <div class="attribute flex justify-between items-center">Intelligence:</div>
@@ -81,21 +85,24 @@
             <div class="flex-grow rounded-xl bg-base-100">
               <div class="w-full flex justify-between bg-accent text-accent-content">
                 <div class="pl-2 pr-2">Equipment: </div>
-                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                <button>
+                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                </button>
               </div>
                 <div class="flex gap-2">
                   <div class="flex justify-center items-center">Head:</div>
-                  <div class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</div>
+                  <button class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</button>
               </div>
             </div>
             <div class="flex-grow rounded-xl bg-base-100">
               <div class="w-full flex justify-between bg-accent text-accent-content">
                 <div class="pl-2 pr-2">Inventory:</div>
-                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                <button>
+                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                </button>                
               </div>
               <div class="flex flex-col justify-center items-center" >
-                <div class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Inventory 1</div>
-                <div>Healing Stimpack</div>
+                <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
                 <div>Inventory 1</div>
                 <div>Inventory 1</div>
                 <div>Inventory 1</div>
@@ -126,11 +133,12 @@
             <div class="flex-grow rounded-xl h-fit bg-base-100">
               <div class="w-full flex justify-between bg-accent text-accent-content">
                 <div class="pl-2 pr-2">Skills/Abilities: </div>
-                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                <button>        
+                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                </button>
               </div>
               <div class="flex flex-col justify-center items-center">
-                <div class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</div>
-                <div>Force Push</div>
+                <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
                 <div>Skill 1</div>
                 <div>Skill 1</div>
                 <div>Skill 1</div>
@@ -143,10 +151,12 @@
             <div class="flex-grow rounded-xl h-fit bg-base-100">
               <div class="w-full flex justify-between bg-accent text-accent-content">
                 <div class="pl-2 pr-2">Companions: </div>
-                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                <button>
+                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                </button>
               </div>
               <div class="flex flex-col justify-center items-center">
-                <div class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</div>
+                <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
               </div>
             </div>
 
@@ -161,14 +171,16 @@
       <div class="w-full flex justify-center bg-accent-focus text-accent-content rounded-lg text-xl">Rewards</div>
       <!--Credits-->
       <div class="flex">
-        <div class="bg-accent text-accent-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2 text-lg">Credits: 200</div>
+        <button class="bg-accent text-accent-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2 text-lg">Credits: 200</button>
       </div>
       <!--Rewards-->
       <div class="flex w-full justify-center gap-4 flex-wrap gap-2">
         <!--Rewards 1-->
         <div class="flex flex-col items-center rounded-xl mb-14 h-fit flex-wrap bg-base-100">
           <div class="w-full flex justify-end">
-            <img class="w-7 h-7 -rotate-90 p-1" src="/src/icons/add.svg" alt="add-icon">
+            <button>
+              <img class="w-7 h-7 -rotate-90 p-1" src="/src/icons/add.svg" alt="add-icon">
+            </button>
           </div>
           <div class="flex flex-wrap gap-4 p-2 pb-4">
             <button class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</button>
@@ -223,7 +235,9 @@
         <div class="rounded-xl bg-base-100 mb-14">
           <div class="flex flex-col justify-between">
             <div class="w-full flex justify-end">
-              <img class="w- h-8 -rotate-90 p-1" src="/src/icons/add.svg" alt="add-icon">
+              <button>
+                <img class="w- h-8 -rotate-90 p-1" src="/src/icons/add.svg" alt="add-icon">
+              </button>
             </div>
             <div class="p-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kade's eyes light up with excitement as he sees your determination. He nods approvingly and begins outlining the preparations needed for your daring mission. "Excellent, Max! Your enthusiasm is contagious," Kade responds. "To pull off this heist, we'll need a few key things. First, we'll require some reliable intel about Trask's hideout—its layout, security systems, and guard rotations. Secondly, we'll need some specialized equipment to help us infiltrate undetected and handle any obstacles that come our way. Lastly, we should consider recruiting a skilled hacker to assist us in bypassing any electronic locks or security protocols." Kade reaches into a hidden compartment in the wall and retrieves a small data pad. "I've managed to gather a bit of information on Trask's operations, but it's far from complete. We'll need to do some legwork to fill in the gaps." He hands you the data pad and continues, "Start by examining the intel. It should give us a general idea of where to begin. Once we have a solid plan, we can discuss what equipment we'll need and how to find a skilled hacker. Are you ready, Max?" With the data pad in hand, you have the opportunity to study the information Kade has gathered so far. This is your chance to familiarize yourself with Trask's operations and formulate a plan to infiltrate his hideout. What will be your next move?
             </div>
