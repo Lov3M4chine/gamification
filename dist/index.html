@@ -18,7 +18,7 @@
         </button>
       </div>
       <div class="flex-1 justify-center">
-        <a class="text-xl text-accent">A Star Wars Story</a>
+        <a class="text-xl rounded-lg p-1 m-2">A Star Wars Story</a>
       </div>
       <div class="flex-none">
         <button class="btn btn-square btn-ghost">
@@ -32,11 +32,11 @@
     <div id="character-page" class="flex justify-center gap-2 flex-wrap h-full">
       <!--Character Portrait-->
       <div class="flex flex-col border justify-between h-fit">
-        <div class="bg-primary text-primary-content text-center">Max Devar</div>
+        <div class="bg-accent text-accent-content text-center">Max Devar</div>
         <img src="/dist/images/Max-1.jpg" class="h-64">
-        <div class="flex relative">
-          <div class="bg-primary text-primary-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2">Credits: 200</div>
-          <div class="absolute right-0 bottom-0">+</div>
+        <div class="flex relative justify-center">
+          <div class="bg-accent text-accent-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2">Credits: 200</div>
+          <img class="w-6 h-6 absolute right-1 bottom-1" src="/src/icons/add.svg" alt="add-icon">
         </div>
       </div>
       <!--Attributes and Inventory-->
@@ -46,81 +46,96 @@
             <div class="border">
               <div class="w-full flex relative justify-center bg-accent text-accent-content">
                 <div class="">Attributes</div>
-                <div class="absolute right-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
+                <img class="w-5 h-5 absolute right-1" src="/src/icons/add.svg" alt="add-icon">
               </div>
-              <div class="flex items-center gap-2 pb-4">
-                <div>Attribute 1: </div>
+              <div class="flex justify-between items-center gap-2 p-4 relative">
+                <div class="flex justify-between items-center">Strength: </div>
                 <div class="flex flex-col">
-                  <div class="flex justify-center text-xs">50/1000</div>
-                  <progress class="progress w-56 h-4 progress-primary" value="40" max="100"></progress>
+                  <div class="flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">50/1000</div>
+                  <progress class="progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="40" max="100"></progress>
                 </div>
                 <div>Level 1</div>
               </div>
-              <div class="flex items-center gap-2 pb-4">
-                <div>Attribute 2: </div>
+              <div class="flex justify-between items-center gap-2 p-4 relative">
+                <div class="flex justify-between items-center">Intelligence:</div>
                 <div class="flex flex-col">
-                  <div class="flex justify-center text-xs">100/1000</div>
-                  <progress class="progress w-56 h-4 progress-primary" value="60" max="100"></progress>
+                  <div class="flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">100/1000</div>
+                  <progress class="progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="60" max="100"></progress>
+                </div>
+                <div>Level 1</div>
+              </div>
+              <div class="flex justify-between items-center gap-2 p-4 relative">
+                <div class="flex justify-between items-center">Spirituality: </div>
+                <div class="flex flex-col">
+                  <div class="flex justify-center text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">100/1000</div>
+                  <progress class="progress w-48 h-4 progress-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " value="80" max="100"></progress>
                 </div>
                 <div>Level 1</div>
               </div>
             </div>
         </div>
         <!--Inventory-->
-        <div class="flex flex-col border">
-          <div class="flex flex-wrap justify-center gap-2">
+        <div class="flex flex-col">
+          <div class="flex flex-wrap justify-center gap-2 mb-14">
             <div class="flex-grow border">
-              <div class="w-full flex justify-between">
-                <div class="bg-accent text-accent-content">Equipment: </div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
+              <div class="w-full flex justify-between bg-accent text-accent-content">
+                <div class="">Equipment: </div>
+                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
               </div>
-              <div class="flex flex-nowrap">Head: Equipment 1</div>
+                <div class="flex gap-2">
+                  <div class="flex justify-center items-center">Head:</div>
+                  <div class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</div>
+              </div>
             </div>
-            <div class="flex-grow border pb-14">
-              <div class="w-full flex justify-between">
+            <div class="flex-grow border">
+              <div class="w-full flex justify-between bg-accent text-accent-content">
                 <div>Inventory:</div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
+                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
               </div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory 1</div>
-              <div>Inventory last</div>
+              <div class="flex flex-col justify-center items-center" >
+                <div class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Inventory 1</div>
+                <div>Healing Stimpack</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory 1</div>
+                <div>Inventory last</div>
+              </div>
             </div>
 
             <!--Skills/Abilities-->
-            <div class="flex-grow border h-fit pb-14">
-              <div class="w-full flex justify-between">
+            <div class="flex-grow border h-fit">
+              <div class="w-full flex justify-between bg-accent text-accent-content">
                 <div>Skills/Abilities: </div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
+                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
               </div>
-              <div>Skill 1</div>
-              <div>Skill 1</div>
-              <div>Skill 1</div>
-              <div>Skill 1</div>
-              <div>Skill 1</div>
-              <div>Skill 1</div>
-              <div>Skill last</div>
+              <div class="flex flex-col justify-center items-center">
+                <div class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</div>
+                <div>Force Push</div>
+                <div>Skill 1</div>
+                <div>Skill 1</div>
+                <div>Skill 1</div>
+                <div>Skill 1</div>
+                <div>Skill last</div>
+              </div>
             </div>
 
           </div>
@@ -138,7 +153,7 @@
       <!--Rewards-->
       <div class="flex w-full justify-center gap-4 flex-wrap gap-2">
         <!--Rewards 1-->
-        <div class="flex flex-col items-center border pb-14">
+        <div class="flex flex-col items-center border mb-14">
           <div>+</div>
           <button class="border rounded">Reward 1</button>
           <div>Reward 1</div>
@@ -151,7 +166,7 @@
           <div>Reward 1</div>
         </div>
         <!--Rewards 2-->
-        <div class="border pb-14">
+        <div class="border mb-14">
           <div class="flex justify-between">
             <div>Reward 1</div>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
@@ -166,7 +181,7 @@
           <div>Reward 1</div>
         </div>
         <!--Rewards 3-->
-        <div class="border pb-14">
+        <div class="border mb-14">
           <div class="flex justify-between">
             <div>Reward 1</div>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
@@ -189,7 +204,7 @@
       <!--Story-->
       <div class="flex w-full gap-2">
         <!--Section 1-->
-        <div class="border pb-14">
+        <div class="border mb-14">
           <div class="flex flex-col justify-between">
             <div class="text-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kade's eyes light up with excitement as he sees your determination. He nods approvingly and begins outlining the preparations needed for your daring mission. "Excellent, Max! Your enthusiasm is contagious," Kade responds. "To pull off this heist, we'll need a few key things. First, we'll require some reliable intel about Trask's hideout—its layout, security systems, and guard rotations. Secondly, we'll need some specialized equipment to help us infiltrate undetected and handle any obstacles that come our way. Lastly, we should consider recruiting a skilled hacker to assist us in bypassing any electronic locks or security protocols." Kade reaches into a hidden compartment in the wall and retrieves a small data pad. "I've managed to gather a bit of information on Trask's operations, but it's far from complete. We'll need to do some legwork to fill in the gaps." He hands you the data pad and continues, "Start by examining the intel. It should give us a general idea of where to begin. Once we have a solid plan, we can discuss what equipment we'll need and how to find a skilled hacker. Are you ready, Max?" With the data pad in hand, you have the opportunity to study the information Kade has gathered so far. This is your chance to familiarize yourself with Trask's operations and formulate a plan to infiltrate his hideout. What will be your next move?
@@ -207,7 +222,7 @@
       <!--Prompts-->
       <div class="flex w-full gap-2">
         <!--AI Story-->
-        <div class="border pb-14 w-1/2">
+        <div class="border mb-14 w-1/2">
           <div class="flex flex-col justify-between">
             <button class="text-right border">Generate Prompt</button>
             <div>Let us role play. I am the player and you are a dungeon-master. My goal is to reach level 10 in each skillset. Level 10 of each skillset should represent about 1000 hours practiced in the given skill. This specific role-playing game will integrate with my real life activities. I will give you my starting stats, equipment, and story summary. Your task is to help provide the narrative for my adventure like a dunegon-master would, as well as maintain the setting given. The narrative will include skill checks (using the skills I provide to you) depending on level. Unlike a tradition RPG, the only way to gain experience or credits is to complete real-life tasks (such as working out, cleaning the house, etc). Give me interesting narrative incentives and in-game rewards to spend time on these real-life tasks.
@@ -220,7 +235,7 @@
           </div>
         </div> 
         <!--AI Art-->
-        <div class="border pb-14 w-1/2">
+        <div class="border mb-14 w-1/2">
           <div class="flex flex-col justify-between">
             <button class="text-right border">Generate Prompt</button>
             <div>Full-body Star Wars Male short-trim-beard blue-lightsaber, jedi-robe, leather-boots, and black-gloves.</div>
@@ -233,8 +248,8 @@
 
 <!--__________________________________________________________________-->
     <!--Footer-->
-    <div class="flex justify-between btm-nav btm-nav-sm">
-      <button id="character-footer">Character</button>
+    <div class="flex justify-between btm-nav btm-nav-xs">
+      <button id="character-footer" class="bg-accent text-accent-content rounded">Character</button>
       <button id="rewards-footer">Rewards</button>
       <button id="story-footer">Story</button>
       <button id="prompts-footer">Prompts</button>

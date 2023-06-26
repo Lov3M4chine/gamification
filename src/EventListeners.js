@@ -7,6 +7,14 @@ const rewardsFooter = document.getElementById("rewards-footer");
 const storyFooter = document.getElementById("story-footer");
 const promptsFooter = document.getElementById("prompts-footer");
 const pages = [characterPage, rewardsPage, storyPage, promptsPage];
+const footers = [characterFooter, rewardsFooter, storyFooter ,promptsFooter]
+
+function highlightFooterSelection (target) {
+    footers.forEach(function(footer) {
+        footer.classList.remove("bg-accent", "text-accent-content", "rounded");
+    });
+    target.classList.add("bg-accent", "text-accent-content", "rounded");
+}
 
 function showPage (pageElement) {
     pages.forEach(function(page) {
@@ -15,10 +23,16 @@ function showPage (pageElement) {
     pageElement.classList.remove('hidden');
 }
 
+function togglePageSelection(pageElement, event) {
+    showPage(pageElement);
+    highlightFooterSelection(event.target);
+}
+
 export function addFooterEventListeners () {
-    characterFooter.addEventListener('click', () => {showPage(characterPage)});
-    rewardsFooter.addEventListener('click', () => {showPage(rewardsPage)});
-    storyFooter.addEventListener('click', () => {showPage(storyPage)});
-    promptsFooter.addEventListener('click', () => {showPage(promptsPage)});
+    characterFooter.addEventListener('click', (event) => {
+        togglePageSelection(characterPage, event)});
+    rewardsFooter.addEventListener('click', (event) => {togglePageSelection(rewardsPage, event)});
+    storyFooter.addEventListener('click', (event) => {togglePageSelection(storyPage, event)});
+    promptsFooter.addEventListener('click', (event) => {togglePageSelection(promptsPage, event)});
     console.log(`Footer event listeners added.`)
 }
