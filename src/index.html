@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="starwars">
+<html lang="en" data-theme="starwars" class="bg-base-200">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,11 @@
   <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="flex flex-col h-screen justify-between mb-80">
+  <div class="flex flex-col justify-between mb-80">
 
 <!--__________________________________________________________________-->
     <!--Header-->
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-base-300 mb-3">
       <div class="flex-none">
         <button class="btn btn-square btn-ghost">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -29,10 +29,11 @@
 
 <!--__________________________________________________________________-->
     <!--Character Body-->
-    <div id="character-page" class="flex justify-center gap-2 flex-wrap h-full">
+    <div id="character-page" class="flex justify-center gap-4 flex-wrap h-full">
+      <div class="w-full flex justify-center bg-accent-focus text-accent-content rounded-lg text-xl">Character</div>
       <!--Character Portrait-->
-      <div class="flex flex-col border justify-between h-fit">
-        <div class="bg-accent text-accent-content text-center">Max Devar</div>
+      <div class="flex flex-col rounded-xl justify-between h-fit bg-base-100">
+        <div class="bg-accent text-accent-content text-center pl-2 pr-2">Max Devar</div>
         <img src="/dist/images/Max-1.jpg" class="h-64">
         <div class="flex relative justify-center">
           <div class="bg-accent text-accent-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2">Credits: 200</div>
@@ -40,12 +41,12 @@
         </div>
       </div>
       <!--Attributes and Inventory-->
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 m-2">
         <!--Attributes-->
-        <div class="">
-            <div class="border">
+        <div class="bg-base-100 rounded-xl">
+            <div class="">
               <div class="w-full flex relative justify-center bg-accent text-accent-content">
-                <div>Attributes</div>
+                <div class="pl-2 pr-2">Attributes</div>
                 <img class="w-5 h-5 absolute right-1" src="/src/icons/add.svg" alt="add-icon">
               </div>
               <div class="flex justify-between items-center gap-2 p-4 relative">
@@ -76,10 +77,10 @@
         </div>
         <!--Inventory-->
         <div class="flex flex-col">
-          <div class="flex flex-wrap justify-center gap-2 mb-14">
-            <div class="flex-grow border">
+          <div class="flex flex-wrap justify-center gap-4 mb-14">
+            <div class="flex-grow rounded-xl bg-base-100">
               <div class="w-full flex justify-between bg-accent text-accent-content">
-                <div class="">Equipment: </div>
+                <div class="pl-2 pr-2">Equipment: </div>
                 <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
               </div>
                 <div class="flex gap-2">
@@ -87,9 +88,9 @@
                   <div class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</div>
               </div>
             </div>
-            <div class="flex-grow border">
+            <div class="flex-grow rounded-xl bg-base-100">
               <div class="w-full flex justify-between bg-accent text-accent-content">
-                <div>Inventory:</div>
+                <div class="pl-2 pr-2">Inventory:</div>
                 <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
               </div>
               <div class="flex flex-col justify-center items-center" >
@@ -122,9 +123,9 @@
             </div>
 
             <!--Skills/Abilities-->
-            <div class="flex-grow border h-fit">
+            <div class="flex-grow rounded-xl h-fit bg-base-100">
               <div class="w-full flex justify-between bg-accent text-accent-content">
-                <div>Skills/Abilities: </div>
+                <div class="pl-2 pr-2">Skills/Abilities: </div>
                 <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
               </div>
               <div class="flex flex-col justify-center items-center">
@@ -138,6 +139,17 @@
               </div>
             </div>
 
+            <!--Companions-->
+            <div class="flex-grow rounded-xl h-fit bg-base-100">
+              <div class="w-full flex justify-between bg-accent text-accent-content">
+                <div class="pl-2 pr-2">Companions: </div>
+                <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <div class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -145,71 +157,77 @@
 
     <!--__________________________________________________________________-->
     <!--Rewards Body-->
-    <div id="rewards-page" class="flex flex-col items-center gap-2 h-full hidden">
+    <div id="rewards-page" class="flex flex-col items-center gap-2 h-full bg-base-200 hidden">
+      <div class="w-full flex justify-center bg-accent-focus text-accent-content rounded-lg text-xl">Rewards</div>
       <!--Credits-->
       <div class="flex">
-        <div>Credits: </div>
+        <div class="bg-accent text-accent-content w-fit flex whitespace-nowrap rounded-lg p-1 m-2 text-lg">Credits: 200</div>
       </div>
       <!--Rewards-->
       <div class="flex w-full justify-center gap-4 flex-wrap gap-2">
         <!--Rewards 1-->
-        <div class="flex flex-col items-center border mb-14">
-          <div>+</div>
-          <button class="border rounded">Reward 1</button>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-        </div>
-        <!--Rewards 2-->
-        <div class="border mb-14">
-          <div class="flex justify-between">
-            <div>Reward 1</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
+        <div class="flex flex-col items-center rounded-xl mb-14 h-fit flex-wrap bg-base-100">
+          <div class="w-full flex justify-end">
+            <img class="w-7 h-7 -rotate-90 p-1" src="/src/icons/add.svg" alt="add-icon">
           </div>
-          <div>Reward 2</div>
-          <div>Reward 2</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-        </div>
-        <!--Rewards 3-->
-        <div class="border mb-14">
-          <div class="flex justify-between">
-            <div>Reward 1</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
+          <div class="flex flex-wrap gap-4 p-2 pb-4">
+            <button class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</button>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+            <div class="bg-accent text-accent-content rounded-lg m-1 pl-1 pr-1 w-fit">Reward 1</div>
+
           </div>
-          <div>Reward 3</div>
-          <div>Reward 3</div>
-          <div>Reward 3</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-          <div>Reward 1</div>
-        </div>  
+        </div>
       </div>
     </div>
 
     <!--__________________________________________________________________-->
     <!--Story Body-->
     <div id="story-page" class="flex flex-col gap-2 h-full hidden">
+      <div class="w-full flex justify-center bg-accent-focus text-accent-content rounded-lg text-xl">In a Galaxy Far Far Away...</div>
       <!--Story-->
       <div class="flex w-full gap-2">
         <!--Section 1-->
-        <div class="border mb-14">
+        <div class="rounded-xl bg-base-100 mb-14">
           <div class="flex flex-col justify-between">
-            <div class="text-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kade's eyes light up with excitement as he sees your determination. He nods approvingly and begins outlining the preparations needed for your daring mission. "Excellent, Max! Your enthusiasm is contagious," Kade responds. "To pull off this heist, we'll need a few key things. First, we'll require some reliable intel about Trask's hideout—its layout, security systems, and guard rotations. Secondly, we'll need some specialized equipment to help us infiltrate undetected and handle any obstacles that come our way. Lastly, we should consider recruiting a skilled hacker to assist us in bypassing any electronic locks or security protocols." Kade reaches into a hidden compartment in the wall and retrieves a small data pad. "I've managed to gather a bit of information on Trask's operations, but it's far from complete. We'll need to do some legwork to fill in the gaps." He hands you the data pad and continues, "Start by examining the intel. It should give us a general idea of where to begin. Once we have a solid plan, we can discuss what equipment we'll need and how to find a skilled hacker. Are you ready, Max?" With the data pad in hand, you have the opportunity to study the information Kade has gathered so far. This is your chance to familiarize yourself with Trask's operations and formulate a plan to infiltrate his hideout. What will be your next move?
+            <div class="w-full flex justify-end">
+              <img class="w- h-8 -rotate-90 p-1" src="/src/icons/add.svg" alt="add-icon">
             </div>
-            <div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kade's eyes light up with excitement as he sees your determination. He nods approvingly and begins outlining the preparations needed for your daring mission. "Excellent, Max! Your enthusiasm is contagious," Kade responds. "To pull off this heist, we'll need a few key things. First, we'll require some reliable intel about Trask's hideout—its layout, security systems, and guard rotations. Secondly, we'll need some specialized equipment to help us infiltrate undetected and handle any obstacles that come our way. Lastly, we should consider recruiting a skilled hacker to assist us in bypassing any electronic locks or security protocols." Kade reaches into a hidden compartment in the wall and retrieves a small data pad. "I've managed to gather a bit of information on Trask's operations, but it's far from complete. We'll need to do some legwork to fill in the gaps." He hands you the data pad and continues, "Start by examining the intel. It should give us a general idea of where to begin. Once we have a solid plan, we can discuss what equipment we'll need and how to find a skilled hacker. Are you ready, Max?" With the data pad in hand, you have the opportunity to study the information Kade has gathered so far. This is your chance to familiarize yourself with Trask's operations and formulate a plan to infiltrate his hideout. What will be your next move?
+            <div class="p-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kade's eyes light up with excitement as he sees your determination. He nods approvingly and begins outlining the preparations needed for your daring mission. "Excellent, Max! Your enthusiasm is contagious," Kade responds. "To pull off this heist, we'll need a few key things. First, we'll require some reliable intel about Trask's hideout—its layout, security systems, and guard rotations. Secondly, we'll need some specialized equipment to help us infiltrate undetected and handle any obstacles that come our way. Lastly, we should consider recruiting a skilled hacker to assist us in bypassing any electronic locks or security protocols." Kade reaches into a hidden compartment in the wall and retrieves a small data pad. "I've managed to gather a bit of information on Trask's operations, but it's far from complete. We'll need to do some legwork to fill in the gaps." He hands you the data pad and continues, "Start by examining the intel. It should give us a general idea of where to begin. Once we have a solid plan, we can discuss what equipment we'll need and how to find a skilled hacker. Are you ready, Max?" With the data pad in hand, you have the opportunity to study the information Kade has gathered so far. This is your chance to familiarize yourself with Trask's operations and formulate a plan to infiltrate his hideout. What will be your next move?
+            </div>
+            <div class="p-4"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kade's eyes light up with excitement as he sees your determination. He nods approvingly and begins outlining the preparations needed for your daring mission. "Excellent, Max! Your enthusiasm is contagious," Kade responds. "To pull off this heist, we'll need a few key things. First, we'll require some reliable intel about Trask's hideout—its layout, security systems, and guard rotations. Secondly, we'll need some specialized equipment to help us infiltrate undetected and handle any obstacles that come our way. Lastly, we should consider recruiting a skilled hacker to assist us in bypassing any electronic locks or security protocols." Kade reaches into a hidden compartment in the wall and retrieves a small data pad. "I've managed to gather a bit of information on Trask's operations, but it's far from complete. We'll need to do some legwork to fill in the gaps." He hands you the data pad and continues, "Start by examining the intel. It should give us a general idea of where to begin. Once we have a solid plan, we can discuss what equipment we'll need and how to find a skilled hacker. Are you ready, Max?" With the data pad in hand, you have the opportunity to study the information Kade has gathered so far. This is your chance to familiarize yourself with Trask's operations and formulate a plan to infiltrate his hideout. What will be your next move?
             </div>
           </div>
         </div> 
@@ -218,29 +236,60 @@
 
     <!--__________________________________________________________________-->
     <!--Prompts Body-->
-    <div id="prompts-page" class="flex flex-col gap-2 h-full hidden">
+    <div id="prompts-page" class="flex flex-col gap-2 h-full bg-base-200 hidden">
+      <div class="w-full flex justify-center bg-accent-focus text-accent-content rounded-lg text-xl">Prompts</div>
       <!--Prompts-->
       <div class="flex w-full gap-2">
         <!--AI Story-->
-        <div class="border mb-14 w-1/2">
-          <div class="flex flex-col justify-between">
-            <button class="text-right border">Generate Prompt</button>
-            <div>Let us role play. I am the player and you are a dungeon-master. My goal is to reach level 10 in each skillset. Level 10 of each skillset should represent about 1000 hours practiced in the given skill. This specific role-playing game will integrate with my real life activities. I will give you my starting stats, equipment, and story summary. Your task is to help provide the narrative for my adventure like a dunegon-master would, as well as maintain the setting given. The narrative will include skill checks (using the skills I provide to you) depending on level. Unlike a tradition RPG, the only way to gain experience or credits is to complete real-life tasks (such as working out, cleaning the house, etc). Give me interesting narrative incentives and in-game rewards to spend time on these real-life tasks.
-              Your goal is to provide a narrative to me, to maintain the setting, and to act as the dungeon master and give me an interesting incentive to spend time on these tasks I don't want to do.  Your goal is to present challenges that incentivize me to earn experience to proceed. 
-              Setting: The setting is Star Wars in the period between Empire Strikes Back and Return of the Jedi. I start out as a normal human being who may or may not be force senstive. My name is Max. Examples of things I can buy would include blasters, healing stimpacks, different equipment, spaceships, player home, etc. The skills I want to be tracked in the game are as follows: strength (leveled up by working out), intelligence (leveled up by programming/studying), and spirit (leveled up by reading the Bible, praying, meditating). Spirit will govern a luck-like attribute, or in the case I become a Jedi - force level. 
+        <div class="flex flex-col gap-4 mb-14 w-1/2">
+          <div class="flex flex-col justify-between border">
+            <div class="flex justify-center bg-accent text-accent-content text-lg">Story Description</div>
+            <div class="flex justify-between bg-base-100 p-1">
+              <button class="text-right rounded-xl bg-primary text-primary-content w-fit p-1">Edit</button>
+              <button class="text-right rounded-xl bg-secondary text-secondary-content w-fit p-1">Generate</button>
+              <button class="text-right rounded-xl bg-accent text-accent-content w-fit p-1">Copy</button>
+            </div>
+            <p class="bg-base-100 p-2">
+              Name: Max Devar; Credits: 200; Attributes: Strength - Level 1; Equipment: Head - Mandalorian Helmet; Inventory: Healing Stimpack; Skills/Abilities: Force Push; Companions: Kit Fisto; Story Summary:  
+            </p>
+          </div>
+          <div class="flex flex-col justify-between border">
+            <div class="flex justify-center bg-accent text-accent-content text-lg">Story Prompt</div>
+            <div class="flex justify-between bg-base-100 p-1">
+              <button class="text-right rounded-xl bg-primary text-primary-content w-fit p-1">Edit</button>
+              <button class="text-right rounded-xl bg-accent text-accent-content w-fit p-1">Copy</button>
+            </div>
+            <p class="bg-base-100 p-2">
+              Let us role play. I am the player and you are a dungeon-master. My goal is to reach level 10 in each skillset. Level 10 of each skillset should represent about 1000 hours practiced in the given skill. This specific role-playing game will integrate with my real life activities. I will give you my starting stats, equipment, and story summary. Your task is to help provide the narrative for my adventure like a dunegon-master would, as well as maintain the setting given. The narrative will include skill checks (using the skills I provide to you) depending on level. Unlike a tradition RPG, the only way to gain experience or credits is to complete real-life tasks (such as working out, cleaning the house, etc). Give me interesting narrative incentives and in-game rewards to spend time on these real-life tasks.
+              Your goal is to provide a narrative to me, to maintain the setting, and to act as the dungeon master and give me an interesting incentive to spend time on these tasks I don't want to do.  Your goal is to present challenges that incentivize me to earn experience to proceed.
+              Setting: The setting is Star Wars in the period between Empire Strikes Back and Return of the Jedi. I start out as a normal human being who may or may not be force senstive. My name is Max. Examples of things I can buy would include blasters, healing stimpacks, different equipment, spaceships, player home, etc. The skills I want to be tracked in the game are as follows: strength (leveled up by working out), intelligence (leveled up by programming/studying), and spirit (leveled up by reading the Bible, praying, meditating). Spirit will govern a luck-like attribute, or in the case I become a Jedi - force level.
               Rules: The only way to gain in-game credits or experience is completing real-life tasks. All in-game rewards should have a credit cost associated with them.
               Commands:
               Story Summary: When I type this command, summarize the story so far, along with key decisions made, so I can prompt you in the future in case our chat history is lost.
-              Are you ready for me to give you my character details?  </div>
+              Are you ready for me to give you my character details?
+            </p>
           </div>
         </div> 
         <!--AI Art-->
-        <div class="border mb-14 w-1/2">
-          <div class="flex flex-col justify-between">
-            <button class="text-right border">Generate Prompt</button>
-            <div>Full-body Star Wars Male short-trim-beard blue-lightsaber, jedi-robe, leather-boots, and black-gloves.</div>
-
+        <div class="flex flex-col gap-4 mb-14 w-1/2">
+          <div class="flex flex-col justify-between border">
+            <div class="flex justify-center bg-accent text-accent-content text-lg">Art Description</div>
+            <div class="flex justify-between bg-base-100 p-1">
+              <button class="text-right rounded-xl bg-primary text-primary-content w-fit p-1">Edit</button>
+              <button class="text-right rounded-xl bg-secondary text-secondary-content w-fit p-1">Generate</button>
+              <button class="text-right rounded-xl bg-accent text-accent-content w-fit p-1">Copy</button>
+            </div>
+              <p class="bg-base-100 p-2">Full-body star-wars male mid-thirtees short-beard</p>
           </div>
+          <div class="flex flex-col justify-between border">
+            <div class="flex justify-center bg-accent text-accent-content text-lg">Art Prompt</div>
+            <div class="flex justify-between bg-base-100 p-1">
+              <button class="text-right rounded-xl bg-primary text-primary-content w-fit p-1">Edit</button>
+              <button class="text-right rounded-xl bg-accent text-accent-content w-fit p-1">Copy</button>
+            </div>
+            <p class="bg-base-100 p-2">Head-Mandalorian-Helmet </p>
+          </div>
+
         </div> 
       </div>
     </div>
@@ -248,7 +297,7 @@
 
 <!--__________________________________________________________________-->
     <!--Footer-->
-    <div class="flex justify-between btm-nav btm-nav-xs">
+    <div class="flex justify-between btm-nav btm-nav-xs bg-base-300">
       <button id="character-footer" class="bg-accent text-accent-content rounded">Character</button>
       <button id="rewards-footer">Rewards</button>
       <button id="story-footer">Story</button>
