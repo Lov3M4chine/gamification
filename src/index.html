@@ -42,6 +42,48 @@
           </button>
         </div>
       </div>
+
+      <!--Activities-->
+      <div class="flex-grow rounded-xl h-fit bg-base-100">
+        <div class="w-full flex justify-between bg-accent text-accent-content">
+          <div class="pl-2 pr-2">Activities: </div>
+          <button>
+            <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Workout</button>
+          <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Program</button>
+        </div>
+
+        <!-- Add Activity -->
+        <div class="w-full p-2 hidden">
+          <input type="text" placeholder="Activity Name" class="input w-full bg-base-200 placeholder-base-content m-1" />
+          <div class="m-4">
+            <div class="w-full rounded-xl bg-accent text-accent-content p-2">Associated Attributes</div>
+            <div class="p-2 form-control">
+              <label class="label cursor-pointer gap-4">
+                <span class="label-text bg-primary text-primary-content p-1 rounded w-full text-lg">Strength</span> 
+                <input type="checkbox" checked="checked" class="checkbox" />
+              </label>
+              <label class="label cursor-pointer gap-4">
+                <span class="label-text bg-primary text-primary-content p-1 rounded w-full text-lg">Intelligence</span> 
+                <input type="checkbox" checked="checked" class="checkbox" />
+              </label>
+              <label class="label cursor-pointer gap-4">
+                <span class="label-text bg-primary text-primary-content p-1 rounded w-full text-lg">Spirituality</span> 
+                <input type="checkbox" checked="checked" class="checkbox" />
+              </label>
+            </div>
+            <div class="flex justify-center w-full">
+              <button class="bg-success text-success-content rounded-lg p-1">Add Attribute</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      
       <!--Attributes and Inventory-->
       <div class="flex flex-col gap-4 m-2">
         <!--Attributes-->
