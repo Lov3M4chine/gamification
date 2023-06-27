@@ -157,7 +157,7 @@
         </div>
       </div>
 
-        <!--Possessions-->
+      <!--Possessions-->
       <div class="flex flex-grow flex-col gap-4 m-2">
         <div class="flex flex-col">
           <div class="flex flex-wrap justify-center gap-4 mb-14">
@@ -289,6 +289,175 @@
 
           </div>
         </div>
+      </div>
+    </div>
+
+    <!--__________________________________________________________________-->
+    <!--New Character Body-->
+    <div id="character-page" class="flex justify-center gap-4 flex-wrap h-full hidden">
+      <div class="w-full flex justify-center bg-accent-focus text-accent-content rounded-lg text-xl">New Character</div>
+
+      <div class="flex flex-wrap gap-4 m-2 justify-center">
+
+        <!--Character Portrait-->
+        <div class="flex flex-col rounded-xl justify-between h-fit bg-base-100">
+          <div class="flex bg-accent rounded-xl">
+            <input type="text" placeholder="Name" class="input bg-accent placeholder-accent-content text-accent-content m-2 input-sm" />
+            <button>
+              <img class="w-6 h-6 -rotate-90 bg-accent" src="/src/icons/add.svg" alt="add-icon">
+            </button>
+          </div>
+          <img src="/dist/images/Max-1.jpg" class="h-64">
+          <div class="flex flex-col relative justify-center">
+            <select class="select select-bordered m-2 bg-accent text-accent-content flex-grow select-md">
+              <option disabled selected>Experience Level</option>
+              <option>Level 1</option>
+              <option>Level 2</option>
+              <option>Level 3</option>
+              <option>Level 4</option>
+              <option>Level 5</option>
+              <option>Level 6</option>
+              <option>Level 7</option>
+              <option>Level 8</option>
+              <option>Level 9</option>
+              <option>Level 10</option>
+            </select>
+            <div class="flex flex-col items-center gap-4 w-full">
+              <div class="flex justify-center bg-accent-focus text-accent-content rounded-lg text-xl mt-2 w-full">Starting Gold</div>
+              <div class="flex justify-center items-center bg-accent-focus text-accent-content rounded-lg w-1/2">200</div>
+              <input type="range" min="0" max="1000" value="100" class="range range-primary" step="100" />
+              <div class="w-full flex justify-between text-xs px-2">
+                <span>0</span>
+                <span>500</span>
+                <span>1000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment -->
+        <div class="flex-grow rounded-xl bg-base-100 h-fit">
+          <div class="w-full flex justify-between bg-accent text-accent-content">
+            <div class="pl-2 pr-2">Equipment: </div>
+            <button>
+              <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+            </button>
+          </div>
+
+            <!-- Add Equipment -->
+            <div id="add-equipment" class="m-1 p-2 hidden">
+              <div class="flex">
+                <input type="text" placeholder="Equipment Type" class="input w-1/2 bg-base-200 placeholder-base-content" />
+                <input type="text" placeholder="Equipment Name" class="input w-1/2 bg-base-200 placeholder-base-content" />
+              </div>
+            </div>
+
+            <!-- Equipment List -->
+            <div id="equipment-list" class="flex flex-col">
+              <div class="flex gap-2">
+                <div class="flex justify-center items-center">Head:</div>
+                <button class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</button>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex justify-center items-center">Head:</div>
+                <button class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</button>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex justify-center items-center">Head:</div>
+                <button class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</button>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex justify-center items-center">Head:</div>
+                <button class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</button>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex justify-center items-center">Head:</div>
+                <button class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</button>
+              </div>
+            </div>
+        </div>
+
+        <!-- Inventory -->
+        <div class="flex-grow rounded-xl bg-base-100 h-fit">
+          <div class="w-full flex justify-between bg-accent text-accent-content">
+            <div class="pl-2 pr-2">Inventory:</div>
+            <button>
+              <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+            </button>                
+          </div>
+          <div class="flex flex-col justify-center items-center" >
+
+            <!-- Add Inventory -->
+            <div id="add-inventory" class="m-1 p-2 hidden">
+              <input type="text" placeholder="Item Name" class="input w-full bg-base-200 placeholder-base-content" />
+            </div>
+
+            <!-- Inventory List -->
+            <div id="inventory-list" class="flex flex-col justify-center items-center">
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Skills/Abilities-->
+        <div class="flex-grow rounded-xl h-fit bg-base-100 h-fit">
+          <div class="w-full flex justify-between bg-accent text-accent-content">
+            <div class="pl-2 pr-2">Skills/Abilities: </div>
+            <button>        
+              <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+            </button>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+
+            <!-- Add Skill/Ability -->
+            <div id="add-skill" class="m-1 p-2 hidden">
+              <input type="text" placeholder="Skill/Ability Name" class="input w-full bg-base-200 placeholder-base-content" />
+            </div>
+
+            <!-- Skills/Abilities List -->
+            <div id="skill-list" class="flex flex-col justify-center items-center">
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Companions-->
+        <div class="flex-grow rounded-xl bg-base-100 h-fit">
+          <div class="w-full flex justify-between bg-accent text-accent-content">
+            <div class="pl-2 pr-2">Companions: </div>
+            <button>
+              <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+            </button>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+
+            <!-- Add Companion -->
+            <div id="add-companion" class="m-1 p-2 hidden">
+              <input type="text" placeholder="Companion Name" class="input w-full bg-base-200 placeholder-base-content" />
+            </div>
+
+            <!-- Companion List -->
+            <div id="companion-list" class="flex flex-col justify-center items-center">
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
+              <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
