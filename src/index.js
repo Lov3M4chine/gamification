@@ -32,10 +32,11 @@ function createNewPlayer() {
         constructor(name) {
             this.name = name;
             this.experience = 0;
-            this.credits = 100;
+            this.credits = 200;
             this.equipment = {};
             this.inventory = {};
             this.skills = {};
+            this.companions = {};
         }
     }
 }
