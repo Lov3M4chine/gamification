@@ -11,7 +11,6 @@ const storyFooter = document.getElementById("story-footer");
 const promptsFooter = document.getElementById("prompts-footer");
 const pages = [characterPage, rewardsPage, storyPage, promptsPage];
 const footers = [characterFooter, rewardsFooter, storyFooter ,promptsFooter]
-const addButtons = document.querySelectorAll(".add-button");
 
 function highlightFooterSelection (target) {
     footers.forEach(function(footer) {
@@ -48,30 +47,33 @@ function addProgressBarEventListeners() {
 }
 
 function addAddItemEventListeners () {
-    document.querySelector('.flex-grow').addEventListener('click', (e) => {
-        const addButton = e.target.closest('.add-button');
-    
-        if (addButton) {
-            const parentElement = addButton.closest('.general-field');
-            const nextAddField = parentElement.querySelector('.add-field');
-            const nextItemList = parentElement.querySelector('.item-list');
-            
-            if (nextAddField && nextItemList) {
-                if (nextAddField.classList.contains('hidden')) {
-                    nextAddField.classList.remove('hidden');
-                    nextItemList.classList.add('hidden');
+    const generalFields = document.querySelectorAll('.general-field');
+
+    generalFields.forEach((generalField) => {
+        generalField.addEventListener('click', (e) => {
+            const addButton = e.target.closest('.add-button');
+        
+            if (addButton) {
+                const parentElement = addButton.closest('.general-field');
+                const nextAddField = parentElement.querySelector('.add-field');
+                const nextItemList = parentElement.querySelector('.item-list');
+                
+                if (nextAddField && nextItemList) {
+                    if (nextAddField.classList.contains('hidden')) {
+                        nextAddField.classList.remove('hidden');
+                        nextItemList.classList.add('hidden');
+                    } else {
+                        nextAddField.classList.add('hidden');
+                        nextItemList.classList.remove('hidden');
+                    }
                 } else {
-                    nextAddField.classList.add('hidden');
-                    nextItemList.classList.remove('hidden');
+                    throw new Error("add-field or item-list class is missing");
                 }
-            } else {
-                throw new Error("add-field or item-list class is missing");
             }
-        }
+        });
     });
-    
-    
 };
+
 
 export function addAllEventListeners() {
     addFooterEventListeners();
