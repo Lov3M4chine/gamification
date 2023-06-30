@@ -48,16 +48,16 @@
       <div class="flex flex-col flex-grow gap-2">
 
         <!--Activities-->
-        <div class="flex-grow rounded-xl h-fit bg-base-100">
+        <div class="flex-grow rounded-xl h-fit bg-base-100 general-field">
           <div class="w-full flex justify-between bg-accent text-accent-content rounded-t-md">
             <div class="pl-2 pr-2 flex">Activities: </div>
             <button>
-              <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+              <img class="w-5 h-5 -rotate-90 add-button" src="/src/icons/add.svg" alt="add-icon">
             </button>
           </div>
 
           <!-- Add Activity -->
-          <div id="add-activity" class="w-full p-2 hidden">
+          <div class="w-full p-2 add-field hidden">
             <input type="text" placeholder="Activity Name" class="input w-full bg-base-200 placeholder-base-content m-1" />
             <div class="m-4">
               <div class="w-full rounded-xl bg-accent text-accent-content p-2">Associated Attributes</div>
@@ -82,7 +82,7 @@
           </div>
 
           <!-- Activity List -->
-          <div id="activity-list" class="flex flex-col justify-center items-center">
+          <div class="flex flex-col justify-center items-center item-list">
             <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-3/5">Workout</button>
             <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-3/5">Program</button>
           </div>
@@ -91,17 +91,17 @@
       
       
         <!--Attributes-->
-        <div class="bg-base-100 rounded-xl">
+        <div class="bg-base-100 rounded-xl general-field">
             <div class="">
               <div class="w-full flex justify-between bg-accent text-accent-content rounded-t-md">
                 <div class="pl-2 pr-2">Attributes:</div>
                 <button class="">
-                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                  <img  class="w-5 h-5 -rotate-90 add-button" src="/src/icons/add.svg" alt="add-icon">
                 </button>       
               </div>
 
               <!-- Add Attribute -->
-              <div id="add-attribute" class="w-full p-2 hidden">
+              <div class="w-full p-2 add-field hidden">
                 <input type="text" placeholder="Attribute Name" class="input w-full bg-base-200 placeholder-base-content m-1" />
                 <div class="m-4">
                   <div class="w-full rounded-xl bg-accent text-accent-content p-2">Associated Activities</div>
@@ -126,7 +126,7 @@
               </div>
 
               <!-- Attribute List -->
-              <div id="attribute-list" class="">
+              <div class="item-list">
                 <div class="flex justify-between items-center gap-2 p-4 relative">
                   <button class="attribute flex justify-between items-center">Strength: </button>
                   <div class="flex flex-col">
@@ -163,16 +163,16 @@
           <div class="flex flex-wrap justify-center gap-4 mb-14">
 
             <!-- Equipment -->
-            <div class="flex-grow rounded-xl bg-base-100">
+            <div class="flex-grow rounded-xl bg-base-100 general-field">
               <div class="w-full flex justify-between bg-accent text-accent-content rounded-t-md">
                 <div class="pl-2 pr-2">Equipment: </div>
                 <button>
-                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                  <img class="w-5 h-5 -rotate-90 add-button" src="/src/icons/add.svg" alt="add-icon">
                 </button>
               </div>
 
                 <!-- Add Equipment -->
-                <div id="add-equipment" class="m-1 p-2 hidden">
+                <div class="m-1 p-2 add-field hidden">
                   <div class="flex">
                     <input type="text" placeholder="Equipment Type" class="input w-1/2 bg-base-200 placeholder-base-content" />
                     <input type="text" placeholder="Equipment Name" class="input w-1/2 bg-base-200 placeholder-base-content" />
@@ -180,7 +180,7 @@
                 </div>
 
                 <!-- Equipment List -->
-                <div id="equipment-list" class="flex flex-col">
+                <div class="flex flex-col item-list">
                   <div class="flex gap-2">
                     <div class="flex justify-center items-center">Head:</div>
                     <button class="flex justify-center items-center bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1">Mandalorian Helmet</button>
@@ -206,22 +206,22 @@
               </div>
 
             <!-- Inventory -->
-            <div class="flex-grow rounded-xl bg-base-100">
+            <div class="flex-grow rounded-xl bg-base-100 general-field">
               <div class="w-full flex justify-between bg-accent text-accent-content rounded-t-md">
                 <div class="pl-2 pr-2">Inventory:</div>
                 <button>
-                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                  <img class="w-5 h-5 -rotate-90 add-button" src="/src/icons/add.svg" alt="add-icon">
                 </button>                
               </div>
               <div class="flex flex-col justify-center items-center" >
 
                 <!-- Add Inventory -->
-                <div id="add-inventory" class="m-1 p-2 hidden">
+                <div class="m-1 p-2 add-field hidden">
                   <input type="text" placeholder="Item Name" class="input w-full bg-base-200 placeholder-base-content" />
                 </div>
 
                 <!-- Inventory List -->
-                <div id="inventory-list" class="flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center items-center item-list">
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Healing Stimpack</button>
@@ -234,22 +234,22 @@
             </div>
 
             <!--Skills/Abilities-->
-            <div class="flex-grow rounded-xl h-fit bg-base-100">
+            <div class="flex-grow rounded-xl h-fit bg-base-100 general-field">
               <div class="w-full flex justify-between bg-accent text-accent-content rounded-t-md">
                 <div class="pl-2 pr-2">Skills/Abilities: </div>
                 <button>        
-                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                  <img class="w-5 h-5 -rotate-90 add-button" src="/src/icons/add.svg" alt="add-icon">
                 </button>
               </div>
               <div class="flex flex-col justify-center items-center">
 
                 <!-- Add Skill/Ability -->
-                <div id="add-skill" class="m-1 p-2 hidden">
+                <div class="m-1 p-2 add-field hidden">
                   <input type="text" placeholder="Skill/Ability Name" class="input w-full bg-base-200 placeholder-base-content" />
                 </div>
 
                 <!-- Skills/Abilities List -->
-                <div id="skill-list" class="flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center items-center item-list">
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Force Push</button>
@@ -260,22 +260,22 @@
             </div>
 
             <!--Companions-->
-            <div class="flex-grow rounded-xl h-fit bg-base-100">
+            <div class="flex-grow rounded-xl h-fit bg-base-100 general-field">
               <div class="w-full flex justify-between bg-accent text-accent-content rounded-t-md">
                 <div class="pl-2 pr-2">Companions: </div>
                 <button>
-                  <img class="w-5 h-5 -rotate-90" src="/src/icons/add.svg" alt="add-icon">
+                  <img class="w-5 h-5 -rotate-90 add-button" src="/src/icons/add.svg" alt="add-icon">
                 </button>
               </div>
               <div class="flex flex-col justify-center items-center">
 
                 <!-- Add Companion -->
-                <div id="add-companion" class="m-1 p-2 hidden">
+                <div class="m-1 p-2 add-field hidden">
                   <input type="text" placeholder="Companion Name" class="input w-full bg-base-200 placeholder-base-content" />
                 </div>
 
                 <!-- Companion List -->
-                <div id="companion-list" class="flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center items-center item-list">
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
                   <button class="bg-primary text-primary-content rounded-lg m-1 pl-1 pr-1 w-fit">Kit Fisto</button>
@@ -347,7 +347,7 @@
           </div>
 
             <!-- Add Equipment -->
-            <div id="add-equipment" class="m-1 p-2 hidden">
+            <div class="m-1 p-2 add-field hidden">
               <div class="flex">
                 <input type="text" placeholder="Equipment Type" class="input w-1/2 bg-base-200 placeholder-base-content" />
                 <input type="text" placeholder="Equipment Name" class="input w-1/2 bg-base-200 placeholder-base-content" />
@@ -390,7 +390,7 @@
           <div class="flex flex-col justify-center items-center" >
 
             <!-- Add Inventory -->
-            <div id="add-inventory" class="m-1 p-2 hidden">
+            <div class="m-1 p-2 add-field hidden">
               <input type="text" placeholder="Item Name" class="input w-full bg-base-200 placeholder-base-content" />
             </div>
 
@@ -418,7 +418,7 @@
           <div class="flex flex-col justify-center items-center">
 
             <!-- Add Skill/Ability -->
-            <div id="add-skill" class="m-1 p-2 hidden">
+            <div class="m-1 p-2 add-field hidden">
               <input type="text" placeholder="Skill/Ability Name" class="input w-full bg-base-200 placeholder-base-content" />
             </div>
 
@@ -444,7 +444,7 @@
           <div class="flex flex-col justify-center items-center">
 
             <!-- Add Companion -->
-            <div id="add-companion" class="m-1 p-2 hidden">
+            <div class="m-1 p-2 add-field hidden">
               <input type="text" placeholder="Companion Name" class="input w-full bg-base-200 placeholder-base-content" />
             </div>
 

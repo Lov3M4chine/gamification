@@ -1,6 +1,5 @@
 import './styles.css';
-import { addFooterEventListeners, addProgressBarEventListeners } from './EventListeners.js';
-import { hideProgressBarOnOverlap } from './ProgreeBarOverlapCheck';
+import { addAllEventListeners} from './EventListeners.js';
 
 
 let experienceNeeded = [];
@@ -41,6 +40,4 @@ function createNewPlayer() {
     }
 }
 
-addFooterEventListeners();
-hideProgressBarOnOverlap();
-addProgressBarEventListeners();
+addAllEventListeners();

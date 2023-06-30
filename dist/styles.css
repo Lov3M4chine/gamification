@@ -1530,6 +1530,9 @@ html {
 [dir="rtl"] .steps-vertical .step:before {
   margin-right: auto;
 }
+.visible {
+  visibility: visible;
+}
 .absolute {
   position: absolute;
 }

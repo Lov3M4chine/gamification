@@ -11,6 +11,7 @@ const storyFooter = document.getElementById("story-footer");
 const promptsFooter = document.getElementById("prompts-footer");
 const pages = [characterPage, rewardsPage, storyPage, promptsPage];
 const footers = [characterFooter, rewardsFooter, storyFooter ,promptsFooter]
+const addButtons = document.querySelectorAll(".add-button");
 
 function highlightFooterSelection (target) {
     footers.forEach(function(footer) {
@@ -31,7 +32,7 @@ function togglePageSelection(pageElement, event) {
     highlightFooterSelection(event.target);
 }
 
-export function addFooterEventListeners () {
+function addFooterEventListeners () {
     characterFooter.addEventListener('click', (event) => {
         togglePageSelection(characterPage, event)});
     rewardsFooter.addEventListener('click', (event) => {togglePageSelection(rewardsPage, event)});
@@ -40,8 +41,41 @@ export function addFooterEventListeners () {
     console.log(`Footer event listeners added.`)
 }
 
-export function addProgressBarEventListeners() {
+function addProgressBarEventListeners() {
     window.addEventListener('resize', () => {
         hideProgressBarOnOverlap();
     });
+}
+
+function addAddItemEventListeners () {
+    document.querySelector('.flex-grow').addEventListener('click', (e) => {
+        const addButton = e.target.closest('.add-button');
+    
+        if (addButton) {
+            const parentElement = addButton.closest('.general-field');
+            const nextAddField = parentElement.querySelector('.add-field');
+            const nextItemList = parentElement.querySelector('.item-list');
+            
+            if (nextAddField && nextItemList) {
+                if (nextAddField.classList.contains('hidden')) {
+                    nextAddField.classList.remove('hidden');
+                    nextItemList.classList.add('hidden');
+                } else {
+                    nextAddField.classList.add('hidden');
+                    nextItemList.classList.remove('hidden');
+                }
+            } else {
+                throw new Error("add-field or item-list class is missing");
+            }
+        }
+    });
+    
+    
+};
+
+export function addAllEventListeners() {
+    addFooterEventListeners();
+    hideProgressBarOnOverlap();
+    addProgressBarEventListeners();
+    addAddItemEventListeners();
 }
